@@ -43,5 +43,10 @@ models:
       api_key: "sk-b903cbc42ff549e8a4849c2ce8d9d5b9"
       base_url: "https://api.deepseek.com"
     concurrency: 10
+  - name: moonshot-v1-128k
+    client:
+      api_key: "sk-cqxUL0HSqcH8MHFddrdHLbSiHylLF3mEcdCJaegQVIW1nVY5"
+      base_url: "https://api.moonshot.cn/v1"
+    concurrency: 3
 
   # Add more models as needed

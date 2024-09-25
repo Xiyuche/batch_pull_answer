@@ -7,7 +7,6 @@ This Python script collects answers from multiple AI models based on a set of qu
 - Asynchronous querying of multiple AI models in parallel.
 - Customizable system prompts for role-playing, e.g., simulating responses from a historical or fictional character.
 - Input and output file paths are configurable via `config.yaml`.
-- Uses `tqdm` to provide a progress bar for tracking the querying process.
 
 ## Requirements
 
@@ -82,9 +81,14 @@ models:
 
 An example flow could look like:
 
-1. Questions in `csv/knowledge_questions.csv`.
-2. Results saved in `model_answers.csv`.
+1. Questions in `input/questions.csv`.
+2. Results saved in `output/answers.csv`.
 
+## Plan & problems
+
+1. Currently, the process bar is incomplete, due to the async pulling.
+2. Currently, do not support multi-input files, and the csv format is constraint.
+3. Currently, the output file will be saved in over-write mode only.
 ## License
 
 This project is for educational purposes and usage is restricted by the API terms of the models you use.
