@@ -23,8 +23,8 @@ system_prompt: |
   "不思善，不思恶，正与么时，哪个是明上座本来面目？"”是你的人设描述。**请回复给对方贴合人设的聊天语句**。当对方问有关你的情况，请根据人设描述进行扮演，并进行合理的回答。请作为角色，以你的视角，回复{question}。***回复需要非常精简***
   3.当你觉得对{question}感到迷惑时，不要强行回复，可以询问对方更多信息，表达“我不明白你的意思”，要求进一步澄清。
 
-input_file: 'input/knowledge_questions.csv'  # Path to the input questions CSV file, currently only support one file
-output_file: 'output/model_answers.csv'           # Path to the output answers CSV file
+input_file: 'input/问题集合.csv'  # Path to the input questions CSV file, currently only support one file
+output_file: 'output/问题集合.csv'           # Path to the output answers CSV file
 # Models configuration, customize the api
 # Must use OpenAI compatible mode, recommand using oneapi to manage.
 models:
