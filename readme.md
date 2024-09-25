@@ -62,10 +62,10 @@ models:
 ## Usage
 
 1. **Prepare the Configuration**:
-   Edit the `config.yaml` file to add your own API keys, base URLs, input CSV file path, and output CSV file path.
+   Edit the `config.yaml` file to add your own `api_key`, `base_url`, `input_file`, and `output_file`.
 
 2. **Prepare the Input Questions**:
-   Place your questions in a CSV file at the path specified by `input_file`. The CSV should have a column named `question`.
+   Place your questions in a CSV file at the path specified by `input_file`. The CSV should have **only one** column named `question`.
 
 3. **Run the Script**:
    Execute the script to start collecting model answers:
@@ -86,9 +86,9 @@ An example flow could look like:
 
 ## Plan & problems
 
-1. Currently, the process bar is incomplete, due to the async pulling.
+1. Currently, the process bars presented by `tqdm` have some issue, due to the async pulling.
 2. Currently, do not support multi-input files, and the csv format is constraint.
-3. Currently, the output file will be saved in over-write mode only.
+3. Currently, the output file will be saved in `over-write` mode only. Be careful about this.
 ## License
 
 This project is for educational purposes and usage is restricted by the API terms of the models you use.
