@@ -33,20 +33,31 @@ models:
 #      api_key: "sk-S52sOieQg04WZzEtNa4gKt52RcJQ3qh6ac8GZfWQhBqQskUg"
 #      base_url: "https://api.openai-proxy.org/v1"  # pay attention to /v1 suffix
 #    concurrency: 10 # different API is forced to be parallel, inside each API we use concurrency number to control.
-  - name: gpt-4o-mini
+#  - name: gpt-4o-mini
+#    client:
+#      api_key: "sk-S52sOieQg04WZzEtNa4gKt52RcJQ3qh6ac8GZfWQhBqQskUg"
+#      base_url: "https://api.openai-proxy.org/v1"
+#    concurrency: 10
+#  - name: deepseek-chat
+#    client:
+#      api_key: "sk-b903cbc42ff549e8a4849c2ce8d9d5b9"
+#      base_url: "https://api.deepseek.com"
+#    concurrency: 10
+#  - name: moonshot-v1-128k
+#    client:
+#      api_key: "sk-cqxUL0HSqcH8MHFddrdHLbSiHylLF3mEcdCJaegQVIW1nVY5"
+#      base_url: "https://api.moonshot.cn/v1"
+#    concurrency: 3
+#  - name: qwen2.5:7b
+#    client:
+#       api_key: "ollama"
+#       base_url: "http://localhost:11434/v1"
+#    concurrency: 1
+  - name: llama3.1:8b
     client:
-      api_key: "sk-S52sOieQg04WZzEtNa4gKt52RcJQ3qh6ac8GZfWQhBqQskUg"
-      base_url: "https://api.openai-proxy.org/v1"
+       api_key: "ollama"
+       base_url: "http://localhost:11434/v1"
     concurrency: 10
-  - name: deepseek-chat
-    client:
-      api_key: "sk-b903cbc42ff549e8a4849c2ce8d9d5b9"
-      base_url: "https://api.deepseek.com"
-    concurrency: 10
-  - name: moonshot-v1-128k
-    client:
-      api_key: "sk-cqxUL0HSqcH8MHFddrdHLbSiHylLF3mEcdCJaegQVIW1nVY5"
-      base_url: "https://api.moonshot.cn/v1"
-    concurrency: 3
+
 
   # Add more models as needed
