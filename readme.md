@@ -32,7 +32,7 @@ The configuration for the script is stored in the `config.yaml` file. It include
 - **Input and output file paths**:
   - `input_file`: Path to the input CSV file containing the questions.
   - `output_file`: Path where the collected model answers will be saved.
-- **Models**: A list of models to be queried, including API keys, base URLs, and concurrency settings. Feel free to add more models.
+- **Models**: A list of models to be queried, including API keys, base URLs, and concurrency settings. Feel free to add more models. Set `concurrency:0` if you are using local LLM API.
 
 Example `config.yaml`:
 
